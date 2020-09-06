@@ -2,6 +2,9 @@ import React from "react";
 
 import MenuItem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
+import hatsImage from "../../images/hats.jpg";
+import womensImage from "../../images/womens.jpg";
+import sneakerImage from "../../images/sneakers.jpg";
 
 class Directory extends React.Component {
   constructor() {
@@ -11,7 +14,7 @@ class Directory extends React.Component {
       sections: [
         {
           title: "hats",
-          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          imageUrl: hatsImage,
           id: 1,
           linkUrl: "shop/hats",
         },
@@ -23,13 +26,13 @@ class Directory extends React.Component {
         },
         {
           title: "sneakers",
-          imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+          imageUrl: sneakerImage,
           id: 3,
           linkUrl: "shop/sneakers",
         },
         {
           title: "womens",
-          imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+          imageUrl: womensImage,
           size: "large",
           id: 4,
           linkUrl: "shop/womens",
