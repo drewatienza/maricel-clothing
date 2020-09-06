@@ -5,6 +5,7 @@ import "./directory.styles.scss";
 import hatsImage from "../../images/hats.jpg";
 import womensImage from "../../images/womens.jpg";
 import sneakerImage from "../../images/sneakers.jpg";
+import mensImage from "../../images/mens.jpg";
 
 class Directory extends React.Component {
   constructor() {
@@ -39,7 +40,7 @@ class Directory extends React.Component {
         },
         {
           title: "mens",
-          imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+          imageUrl: mensImage,
           size: "large",
           id: 5,
           linkUrl: "shop/mens",
@@ -51,8 +52,8 @@ class Directory extends React.Component {
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ title, imageUrl, id, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+        {this.state.sections.map(({ id, ...otheSectionProps }) => (
+          <MenuItem key={id} {...otheSectionProps} />
         ))}
       </div>
     );
