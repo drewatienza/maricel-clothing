@@ -11,3 +11,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media screen and (orientation: portrait) {
+  body {
+    padding: 20px 5px;
+  }
+}

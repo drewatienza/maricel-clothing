@@ -6,6 +6,7 @@ import hatsImage from "../../images/hats.jpg";
 import womensImage from "../../images/womens.jpg";
 import sneakerImage from "../../images/sneakers.jpg";
 import mensImage from "../../images/mens.jpg";
+import jacketImage from "../../images/jackets.jpg";
 
 class Directory extends React.Component {
   constructor() {
@@ -21,7 +22,7 @@ class Directory extends React.Component {
         },
         {
           title: "jackets",
-          imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+          imageUrl: jacketImage,
           id: 2,
           linkUrl: "shop/jackets",
         },
