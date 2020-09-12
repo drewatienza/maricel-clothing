@@ -71,9 +71,20 @@
 
 @media screen and (orientation: portrait) {
   .menu-item {
-    min-width: 45%;
+    min-width: 30%;
     &.large {
       height: 240px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: portrait) {
+  .menu-item {
+    min-width: 35%;
+    &.large {
+      &:last-child {
+        height: 380px;
+      }
     }
   }
 }
