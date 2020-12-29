@@ -21,6 +21,10 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
+  @media (max-width: 400px) {
+    width: 65%;
+  }
 `;
 
 export const OptionLink = styled(Link)`
